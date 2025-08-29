@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
-import cors from "cors";
+const cors = require("cors");
 app.use(cors({
   origin: "*", // or specific frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
