@@ -1,6 +1,12 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
+import cors from "cors";
+app.use(cors({
+  origin: "*", // or specific frontend URL
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
 app.use(express.json());
 
