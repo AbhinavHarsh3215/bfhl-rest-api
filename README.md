@@ -21,3 +21,5 @@ REST API that processes an array and returns required data as per instructions i
 
 1. `npm install`
 2. `npm start`
+
+Thanks
